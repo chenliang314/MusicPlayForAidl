@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/player_controller_height"
+    android:background="@color/player_controller_bg" >
+
+    <ImageView
+        android:id="@+id/play_song_icon"
+        android:layout_width="@dimen/song_icon_size"
+        android:layout_height="@dimen/song_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/song_icon_margin"
+        android:layout_marginRight="@dimen/song_icon_margin"
+        android:contentDescription="@string/song_icon_desc"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_icon" />
+
+    <SeekBar
+        android:id="@+id/play_progress"
+        style="@style/SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/play_song_icon" />
+
+    <Button
+        android:id="@+id/play_btn_next"
+        android:layout_width="@dimen/play_btn_size"
+        android:layout_height="@dimen/play_btn_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/play_progress"
+        android:layout_marginRight="@dimen/play_btn_margin"
+        android:background="@drawable/ic_media_next" />
+
+    <Button
+        android:id="@+id/play_btn_pause"
+        android:layout_width="@dimen/play_btn_size"
+        android:layout_height="@dimen/play_btn_size"
+        android:layout_below="@id/play_progress"
+        android:layout_marginRight="@dimen/play_btn_margin"
+        android:layout_toLeftOf="@id/play_btn_next"
+        android:background="@drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/play_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/singer_margin_bottom"
+        android:layout_toLeftOf="@id/play_btn_pause"
+        android:layout_toRightOf="@id/play_song_icon"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        android:text="Artist"
+        android:textSize="@dimen/text_size_12dp" />
+
+    <TextView
+        android:id="@+id/play_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/play_singer"
+        android:layout_below="@id/play_progress"
+        android:layout_toLeftOf="@id/play_btn_pause"
+        android:layout_toRightOf="@id/play_song_icon"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="Music Name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_12dp">12dp</dimen>
+    <dimen name="text_size_16dp">16dp</dimen>
+    <dimen name="player_title_margin">8dp</dimen>
+    <dimen name="progressbar_corners">3dp</dimen>
+    <dimen name="player_search_margin">10dp</dimen>
+    <dimen name="player_controller_height">64dp</dimen>
+    <dimen name="player_title_height">48dp</dimen>
+    <dimen name="player_title_logo">24dp</dimen>
+    <dimen name="player_title_setting">32dp</dimen>
+    <dimen name="song_icon_size">48dp</dimen>
+    <dimen name="song_icon_margin">10dp</dimen>
+    <dimen name="singer_margin_bottom">2dp</dimen>
+    <dimen name="sing_name_max_width">100dp</dimen>
+    <dimen name="play_btn_size">36dp</dimen>
+    <dimen name="play_btn_margin">10dp</dimen>
+    <dimen name="loading_height">48dp</dimen>
+    <dimen name="loading_text_margin">10dp</dimen>
+    <dimen name="music_list_item_height">48dp</dimen>
+    <dimen name="music_list_cut_w">56dp</dimen>
+    <dimen name="music_list_cut_h">32dp</dimen>
+    <dimen name="music_list_index">32dp</dimen>
+    <!-- <dimen name="music_list_item_btn">40dp</dimen> -->
+    <dimen name="music_list_item_btn_right">10dp</dimen>
+
+</resources>

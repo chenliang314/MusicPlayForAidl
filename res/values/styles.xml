@@ -1,0 +1,46 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ProgressBarHorizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    <style name="SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:thumb">@drawable/seekbar_thumb_selector_holo</item>
+        <item name="android:focusable">true</item>
+    </style>
+        <!-- 从次Activity切换到其他Activity的效果 -->
+    <style name="act_in_anim_no_title" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/ativity_to_ativityAnimation</item>
+    </style>
+        <style name="ativity_to_ativityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter2</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit2</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter2</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit2</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/music_list_item_height"
+    android:background="@android:color/white"
+    tools:context=".AndroidTest" >
+
+    <TextView
+        android:id="@+id/music_cut"
+        android:layout_width="@dimen/music_list_cut_w"
+        android:layout_height="@dimen/music_list_cut_h"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/music_list_item_btn_right"
+        android:background="@drawable/shape_music_btn_selector"
+        android:text="@string/music_cut"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/music_index"
+        android:layout_width="@dimen/music_list_index"
+        android:layout_height="@dimen/music_list_index"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/music_list_item_btn_right"
+        android:background="@drawable/shape_music_index"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/music_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_list_item_height"
+        android:layout_marginLeft="@dimen/music_list_item_btn_right"
+        android:layout_toLeftOf="@id/music_cut"
+        android:layout_toRightOf="@id/music_index"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
